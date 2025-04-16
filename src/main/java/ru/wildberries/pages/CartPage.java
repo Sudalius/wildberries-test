@@ -6,8 +6,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends BasePage<CartPage> {
 
-    @FindBy(xpath = "//h1[@class='basket-section__header basket-section__header--main active']")
-    private WebElement cartPageTitle; // локатор для альтернативной проверки, что мы находимся в корзине
+    @FindBy(xpath = "//h1[contains(@class, 'basket-section__header')]")
+    private WebElement cartPageTitle;
 
     @FindBy(xpath = "//span[@class='good-info__good-name']")
     private WebElement cartItem;
